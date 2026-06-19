@@ -5,8 +5,7 @@ import { m as motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 import AnimatedHeading from "./AnimatedHeading";
 import GlassCard from "./ui/GlassCard";
-import { ExternalLink, Sparkles } from "lucide-react";
-import { FaGithub } from "react-icons/fa";
+import { Sparkles } from "lucide-react";
 
 export default function Projects() {
   return (
@@ -73,29 +72,15 @@ export default function Projects() {
                     ))}
                   </div>
 
-                  {/* Action buttons */}
-                  <div className="flex gap-3">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      id={`project-${index + 1}-github-btn`}
-                      className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 py-2.5 text-sm font-medium text-slate-300 transition-all duration-200 hover:border-white/25 hover:text-white hover:bg-white/10"
-                    >
-                      <FaGithub size={15} />
-                      Code
-                    </a>
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      id={`project-${index + 1}-live-btn`}
-                      className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-cyan-500 py-2.5 text-sm font-semibold text-black transition-all duration-200 hover:bg-cyan-400 hover:shadow-[0_0_16px_rgba(6,182,212,0.4)]"
-                    >
-                      <ExternalLink size={15} />
-                      Live
-                    </a>
-                  </div>
+                  {/* Project Achievements */}
+                  <ul className="mt-auto flex flex-col gap-1.5">
+                    {project.features?.map((feature, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
+                        <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-cyan-400"></span>
+                        <span className="leading-snug">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </GlassCard>
             </motion.div>

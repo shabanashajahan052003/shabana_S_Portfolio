@@ -9,7 +9,7 @@ const experiences = [
   {
     title: "UI Developer Intern",
     company: "Valoriz Digital (Mozanta Technologies)",
-    location: "Technopark",
+    location: "Technopark Phase 1 , Trivandrum",
     period: "Current",
     description:
       "Designing and developing modern user interfaces, improving user experience and building responsive web applications with cutting-edge frontend technologies.",
@@ -18,7 +18,7 @@ const experiences = [
   {
     title: "Software Developer Intern",
     company: "BlueRipples Technologies",
-    location: "",
+    location: "Kinfrapark , Trivandrum",
     period: "Prior",
     description:
       "Developed responsive applications and integrated REST APIs while collaborating with cross-functional teams. Gained experience in full-stack development workflows.",

@@ -194,7 +194,9 @@ export default function Hero() {
             {/* Secondary */}
             <a
               href="/resume/Shabana_Resume.pdf"
-              download
+              download="Shabana_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               id="hero-download-cv-btn"
               className="flex items-center gap-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm px-8 py-3.5 font-semibold text-sm text-white transition-all duration-300 hover:border-cyan-400/60 hover:bg-cyan-500/10 hover:scale-105"
             >

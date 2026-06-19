@@ -22,7 +22,7 @@ const educationDetails = [
   },
   {
     degree: "Secondary Education (10th Standard)",
-    stream: "General",
+    stream: "SSLC",
     institution: "TKM HSS Karikode, Kollam",
     score: "Score: 98% | Full A+",
     accent: "#ec4899",
