@@ -4,7 +4,7 @@ import { m as motion, type Transition } from "framer-motion";
 import dynamic from "next/dynamic";
 import { useEffect } from "react";
 import Image from "next/image";
-import { ChevronDown, Download, ArrowRight } from "lucide-react";
+import { ChevronDown, Download, ArrowRight, FileText } from "lucide-react";
 import { useMotionValue, useSpring, useTransform } from "framer-motion";
 
 // SSR-disabled: Three.js only runs in the browser
@@ -189,6 +189,18 @@ export default function Hero() {
                 size={17}
                 className="transition-transform duration-200 group-hover:translate-x-1"
               />
+            </a>
+
+            {/* View Resume */}
+            <a
+              href="/resume/Shabana_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Resume in new tab"
+              className="group flex items-center gap-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm px-8 py-3.5 font-semibold text-sm text-white transition-all duration-300 hover:border-cyan-400/50 hover:bg-cyan-500/10 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
+            >
+              <FileText size={17} className="text-cyan-400 transition-transform duration-300 group-hover:-rotate-12 group-hover:scale-110" />
+              View Resume
             </a>
 
             {/* Secondary */}
