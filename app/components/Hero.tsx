@@ -135,13 +135,13 @@ export default function Hero() {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="gradient-text text-5xl md:text-6xl lg:text-8xl font-bold flex justify-center md:justify-start flex-wrap leading-none tracking-tight"
+            className="gradient-text text-[clamp(1.75rem,8vw,6rem)] font-bold flex justify-center md:justify-start flex-nowrap whitespace-nowrap leading-none tracking-tight"
           >
             {name.split("").map((char, i) => (
               <motion.span
                 key={i}
                 variants={charVariants}
-                className={char === " " ? "w-3 md:w-5" : "inline-block"}
+                className={char === " " ? "w-[0.3em]" : "inline-block"}
               >
                 {char}
               </motion.span>
