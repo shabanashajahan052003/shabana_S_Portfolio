@@ -52,8 +52,8 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
       className={`fixed top-0 z-50 w-full transition-all duration-500 ${scrolled
-          ? "bg-[#050816]/70 backdrop-blur-md shadow-[0_10px_30px_-10px_rgba(0,0,0,0.5)] py-4"
-          : "bg-transparent py-6"
+        ? "bg-[#050816]/70 backdrop-blur-md shadow-[0_10px_30px_-10px_rgba(0,0,0,0.5)] py-4"
+        : "bg-transparent py-6"
         }`}
       role="navigation"
       aria-label="Main navigation"
@@ -80,8 +80,8 @@ export default function Navbar() {
                   href={link.href}
                   role="menuitem"
                   className={`relative text-sm font-medium transition-colors duration-200 ${isActive
-                      ? "text-cyan-400"
-                      : "text-slate-400 hover:text-white"
+                    ? "text-cyan-400"
+                    : "text-slate-400 hover:text-white"
                     }`}
                 >
                   {link.label}
@@ -156,8 +156,8 @@ export default function Navbar() {
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
                     className={`block text-base font-medium transition-colors duration-200 ${activeSection === link.href.slice(1)
-                        ? "text-cyan-400"
-                        : "text-slate-300 hover:text-white"
+                      ? "text-cyan-400"
+                      : "text-slate-300 hover:text-white"
                       }`}
                   >
                     {link.label}

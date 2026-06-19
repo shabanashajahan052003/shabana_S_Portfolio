@@ -51,9 +51,8 @@ export default function Experience() {
                   delay: i * 0.15,
                   ease: [0.16, 1, 0.3, 1],
                 }}
-                className={`relative pl-16 md:pl-0 ${
-                  i % 2 === 0 ? "md:pr-[calc(50%+2rem)]" : "md:pl-[calc(50%+2rem)]"
-                }`}
+                className={`relative pl-16 md:pl-0 ${i % 2 === 0 ? "md:pr-[calc(50%+2rem)]" : "md:pl-[calc(50%+2rem)]"
+                  }`}
               >
                 {/* Timeline dot */}
                 <div
