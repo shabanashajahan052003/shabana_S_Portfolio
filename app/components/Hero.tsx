@@ -100,7 +100,7 @@ export default function Hero() {
       {/* ── Text & Image Content (parallax layer) ── */}
       <motion.div
         style={{ x: textX, y: textY }}
-        className="relative z-10 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16"
+        className="relative z-10 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20"
       >
         {/* Profile Image */}
         <motion.div
@@ -135,7 +135,7 @@ export default function Hero() {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="gradient-text text-[clamp(1.75rem,8vw,6rem)] font-bold flex justify-center md:justify-start flex-nowrap whitespace-nowrap leading-none tracking-tight"
+            className="gradient-text text-[clamp(1.5rem,4.2vw,2.9rem)] font-semibold flex justify-center md:justify-start flex-nowrap whitespace-nowrap leading-none tracking-tight"
           >
             {name.split("").map((char, i) => (
               <motion.span
@@ -149,13 +149,21 @@ export default function Hero() {
           </motion.h1>
 
           {/* Role subtitle */}
-          <motion.p
+          <motion.h2
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.6, duration: 0.8, ease: "easeOut" }}
-            className="mt-7 text-lg md:text-xl text-slate-300 font-light tracking-wide"
+            className="mt-6 text-2xl md:text-3xl text-white font-semibold tracking-wide"
           >
-            UI Developer Intern at{" "}
+            UI / Frontend Developer
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.7, duration: 0.8, ease: "easeOut" }}
+            className="mt-2 text-base md:text-lg text-slate-300 font-light tracking-wide"
+          >
+            Intern at{" "}
             <span className="text-cyan-400 font-medium">
               Valoriz Digital (Mozanta Technologies)
             </span>

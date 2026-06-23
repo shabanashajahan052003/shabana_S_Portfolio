@@ -75,74 +75,24 @@ function FloatingShape({
 
 const SHAPES: ShapeProps[] = [
   {
-    position: [-7, 2, -4],
+    position: [-8, 3, -6],
     type: "icosahedron",
     color: "#06b6d4",
-    scale: 1.3,
+    scale: 1.2,
+    floatSpeed: 0.5,
+    wireframe: true,
+    emissiveIntensity: 0.2, // Subtle glow
+  },
+  {
+    position: [8, -2, -8],
+    type: "sphere",
+    color: "#8b5cf6",
+    scale: 0.8,
     floatSpeed: 0.7,
-    wireframe: true,
-    emissiveIntensity: 0.6,
-  },
-  {
-    position: [7, -1.5, -5],
-    type: "sphere",
-    color: "#8b5cf6",
-    scale: 0.9,
-    floatSpeed: 1.1,
-    emissiveIntensity: 0.4,
-  },
-  {
-    position: [-5, -3.5, -3],
-    type: "torus",
-    color: "#06b6d4",
-    scale: 0.65,
-    floatSpeed: 0.6,
-    rotationSpeed: 1.0,
-    emissiveIntensity: 0.5,
-  },
-  {
-    position: [5.5, 3.5, -6],
-    type: "octahedron",
-    color: "#ec4899",
-    scale: 1.0,
-    floatSpeed: 0.9,
-    emissiveIntensity: 0.5,
-  },
-  {
-    position: [0.5, 5.5, -7],
-    type: "box",
-    color: "#8b5cf6",
-    scale: 0.75,
-    floatSpeed: 0.65,
-    rotationSpeed: 0.5,
-    emissiveIntensity: 0.35,
-  },
-  {
-    position: [-8, -1, -6],
-    type: "icosahedron",
-    color: "#06b6d4",
-    scale: 0.55,
-    floatSpeed: 1.2,
-    wireframe: true,
-    emissiveIntensity: 0.7,
-  },
-  {
-    position: [9, 1, -8],
-    type: "sphere",
-    color: "#a78bfa",
-    scale: 0.7,
-    floatSpeed: 0.85,
-    emissiveIntensity: 0.3,
-  },
-  {
-    position: [-2, -6, -5],
-    type: "octahedron",
-    color: "#22d3ee",
-    scale: 0.6,
-    floatSpeed: 1.0,
-    emissiveIntensity: 0.55,
+    emissiveIntensity: 0.15, // Subtle glow
   },
 ];
+
 
 export default function FloatingShapes() {
   return (
