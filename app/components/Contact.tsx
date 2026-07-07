@@ -8,10 +8,10 @@ import AnimatedHeading from "./AnimatedHeading";
 
 const contactLinks = [
   {
-    href: "mailto:shabanashajahan052003@gmail.com",
+    href: "mailto:shabanashajahan313@gmail.com",
     icon: Mail,
     label: "Email Me",
-    sublabel: "shabanashajahan052003@gmail.com",
+    sublabel: "shabanashajahan313@gmail.com",
     color: "#06b6d4",
     external: false,
   },
@@ -124,7 +124,7 @@ export default function Contact() {
             <div>
               <p className="text-sm font-semibold text-white">Location</p>
               <p className="mt-0.5 text-xs text-slate-500">
-                Kollam, Kerala, India
+                Al-Qusais, Dubai, UAE
               </p>
             </div>
           </motion.div>
@@ -132,8 +132,8 @@ export default function Contact() {
 
         {/* Resume download CTA */}
         <motion.a
-          href="/resume/Shabana_Resume.pdf"
-          download="Shabana_Resume.pdf"
+          href="/resume/Shabana.pdf"
+          download="Shabana.pdf"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, y: 24 }}

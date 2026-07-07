@@ -201,7 +201,7 @@ export default function Hero() {
 
             {/* View Resume */}
             <a
-              href="/resume/Shabana_Resume.pdf"
+              href="/resume/Shabana.pdf"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View Resume in new tab"
@@ -213,8 +213,8 @@ export default function Hero() {
 
             {/* Secondary */}
             <a
-              href="/resume/Shabana_Resume.pdf"
-              download="Shabana_Resume.pdf"
+              href="/resume/Shabana.pdf"
+              download="Shabana.pdf"
               target="_blank"
               rel="noopener noreferrer"
               id="hero-download-cv-btn"
