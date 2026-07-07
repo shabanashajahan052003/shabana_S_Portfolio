@@ -132,8 +132,8 @@ export default function Contact() {
 
         {/* Resume download CTA */}
         <motion.a
-          href="/resume/Shabana.pdf"
-          download="Shabana.pdf"
+          href="/resume/Shabana_resume.pdf"
+          download="Shabana_resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, y: 24 }}
