@@ -149,35 +149,56 @@ export default function Hero() {
           </motion.h1>
 
           {/* Role subtitle */}
-          <motion.h2
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.6, duration: 0.8, ease: "easeOut" }}
-            className="mt-6 text-2xl md:text-3xl text-white font-semibold tracking-wide"
-          >
-            UI / Frontend Developer
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.7, duration: 0.8, ease: "easeOut" }}
-            className="mt-2 text-base md:text-lg text-slate-300 font-light tracking-wide"
-          >
-            Intern at{" "}
-            <span className="text-cyan-400 font-medium">
-              Valoriz Digital (Mozanta Technologies)
-            </span>
-          </motion.p>
+          {/* Role */}
+<motion.h2
+  initial={{ opacity: 0, y: 24 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1.6, duration: 0.8, ease: "easeOut" }}
+  className="mt-6 text-2xl md:text-3xl text-white font-semibold tracking-wide"
+>
+  Software Developer{" "}
+  <span className="text-cyan-400">|</span>{" "}
+  Frontend Developer
+</motion.h2>
 
-          {/* Tags */}
-          <motion.p
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.95, duration: 0.8, ease: "easeOut" }}
-            className="mt-4 text-sm md:text-base text-slate-500 tracking-widest uppercase"
-          >
-            Teacher&nbsp;•&nbsp;Volunteer&nbsp;•&nbsp;Basketball Player&nbsp;•&nbsp;Developer
-          </motion.p>
+{/* Professional Summary */}
+<motion.p
+  initial={{ opacity: 0, y: 24 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1.75, duration: 0.8, ease: "easeOut" }}
+  className="mt-4 max-w-2xl text-base md:text-lg text-slate-300 font-light leading-8"
+>
+  Building responsive, scalable, and user-friendly web applications using{" "}
+  <span className="text-cyan-400 font-medium">
+    React, Next.js, TypeScript
+  </span>
+  , and modern frontend technologies. Passionate about creating clean UI,
+  seamless user experiences, and high-performance web applications.
+</motion.p>
+
+{/* Tech Stack */}
+<motion.div
+  initial={{ opacity: 0, y: 24 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 2.0, duration: 0.8, ease: "easeOut" }}
+  className="mt-6 flex flex-wrap items-center justify-center md:justify-start gap-3"
+>
+  {[
+    "React.js",
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "JavaScript",
+    "Python",
+  ].map((tech) => (
+    <span
+      key={tech}
+      className="rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300 backdrop-blur-sm transition-all duration-300 hover:border-cyan-400/50 hover:bg-cyan-500/20 hover:scale-105"
+    >
+      {tech}
+    </span>
+  ))}
+</motion.div>
 
           {/* CTA Buttons */}
           <motion.div

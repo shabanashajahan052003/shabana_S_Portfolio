@@ -55,16 +55,11 @@ const journey = [
   },
   {
     icon: "⚙️",
-    title: "Software Developer Intern",
+    title: "Software Developer",
     description: "BlueRipples Technologies",
-    category: "Internship",
+    category: "Experience",
   },
-  {
-    icon: "🚀",
-    title: "UI Developer Intern",
-    description: "Valoriz Digital, Technopark",
-    category: "Internship",
-  },
+ 
 ];
 
 const categoryColors: Record<string, string> = {

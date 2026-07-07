@@ -38,7 +38,7 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mt-3 text-sm text-slate-500"
         >
-          UI Developer Intern at Valoriz Digital
+          FrontEnd developer| Software developer
         </motion.p>
 
         {/* Social icons */}

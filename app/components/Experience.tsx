@@ -7,22 +7,11 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    title: "UI Developer Intern",
-    company: "Valoriz Digital (Mozanta Technologies)",
-    location: "Technopark Phase 1 , Trivandrum",
-    period: "Current",
-    description:
-      "Designing and developing modern user interfaces, improving user experience and building responsive web applications with cutting-edge frontend technologies.",
-    accent: "#06b6d4",
-  },
-  {
-    title: "Software Developer Intern",
+    title: "Software Developer",
     company: "BlueRipples Technologies",
-    location: "Kinfrapark , Trivandrum",
-    period: "Prior",
-    description:
-      "Developed responsive applications and integrated REST APIs while collaborating with cross-functional teams. Gained experience in full-stack development workflows.",
-    accent: "#8b5cf6",
+    location: "Trivandrum, Kerala",
+    period: "Jun 2025 – May 2026",
+    accent: "#06b6d4",
   },
 ];
 
@@ -101,9 +90,36 @@ export default function Experience() {
                     </span>
                   </div>
 
-                  <p className="text-sm leading-7 text-slate-400">
-                    {exp.description}
-                  </p>
+                 <ul className="mt-4 space-y-3 text-sm leading-7 text-slate-400 list-disc pl-5">
+  <li>
+    Developed responsive and high-performance web applications using
+    React.js, Next.js, TypeScript, JavaScript, HTML5, CSS3, SCSS, and
+    Tailwind CSS.
+  </li>
+
+  <li>
+    Translated Figma designs into pixel-perfect, responsive, and
+    cross-browser compatible user interfaces while ensuring an excellent
+    user experience.
+  </li>
+
+  <li>
+    Built reusable, modular UI components and integrated REST APIs to
+    deliver scalable, maintainable, and dynamic frontend applications.
+  </li>
+
+  <li>
+    Improved application performance through lazy loading, code
+    splitting, pagination, debouncing, and frontend optimization
+    techniques.
+  </li>
+
+  <li>
+    Collaborated with UI/UX designers and backend developers using Git
+    and Agile methodologies to deliver production-ready software on
+    time.
+  </li>
+</ul>
 
                   {/* Bottom icon */}
                   <div
@@ -111,7 +127,7 @@ export default function Experience() {
                     style={{ color: exp.accent }}
                   >
                     <Briefcase size={12} />
-                    Internship
+                    Professional Experience
                   </div>
                 </div>
               </motion.div>
