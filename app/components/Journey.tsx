@@ -59,6 +59,12 @@ const journey = [
     description: "BlueRipples Technologies",
     category: "Experience",
   },
+  {
+  icon: "🎨",
+  title: "UI Developer",
+  description: "Valoriz Digital (Mozanta Technologies)",
+  category: "Experience",
+},
  
 ];
 
