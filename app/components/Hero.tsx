@@ -150,55 +150,55 @@ export default function Hero() {
 
           {/* Role subtitle */}
           {/* Role */}
-<motion.h2
-  initial={{ opacity: 0, y: 24 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 1.6, duration: 0.8, ease: "easeOut" }}
-  className="mt-6 text-2xl md:text-3xl text-white font-semibold tracking-wide"
->
-  Software Developer{" "}
-  <span className="text-cyan-400">|</span>{" "}
-  Frontend Developer
-</motion.h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.6, duration: 0.8, ease: "easeOut" }}
+            className="mt-6 text-2xl md:text-3xl text-white font-semibold tracking-wide"
+          >
+            Software Developer{" "}
+            <span className="text-cyan-400">|</span>{" "}
+            Frontend Developer
+          </motion.h2>
 
-{/* Professional Summary */}
-<motion.p
-  initial={{ opacity: 0, y: 24 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 1.75, duration: 0.8, ease: "easeOut" }}
-  className="mt-4 max-w-2xl text-base md:text-lg text-slate-300 font-light leading-8"
->
-  Building responsive, scalable, and user-friendly web applications using{" "}
-  <span className="text-cyan-400 font-medium">
-    React, Next.js, TypeScript
-  </span>
-  , and modern frontend technologies. Passionate about creating clean UI,
-  seamless user experiences, and high-performance web applications.
-</motion.p>
+          {/* Professional Summary */}
+          <motion.p
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.75, duration: 0.8, ease: "easeOut" }}
+            className="mt-4 max-w-2xl text-base md:text-lg text-slate-300 font-light leading-8"
+          >
+            Building responsive, scalable, and user-friendly web applications using{" "}
+            <span className="text-cyan-400 font-medium">
+              React, Next.js, TypeScript
+            </span>
+            , and modern frontend technologies. Passionate about creating clean UI,
+            seamless user experiences, and high-performance web applications.
+          </motion.p>
 
-{/* Tech Stack */}
-<motion.div
-  initial={{ opacity: 0, y: 24 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 2.0, duration: 0.8, ease: "easeOut" }}
-  className="mt-6 flex flex-wrap items-center justify-center md:justify-start gap-3"
->
-  {[
-    "React.js",
-    "Next.js",
-    "TypeScript",
-    "Tailwind CSS",
-    "JavaScript",
-    "Python",
-  ].map((tech) => (
-    <span
-      key={tech}
-      className="rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300 backdrop-blur-sm transition-all duration-300 hover:border-cyan-400/50 hover:bg-cyan-500/20 hover:scale-105"
-    >
-      {tech}
-    </span>
-  ))}
-</motion.div>
+          {/* Tech Stack */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 2.0, duration: 0.8, ease: "easeOut" }}
+            className="mt-6 flex flex-wrap items-center justify-center md:justify-start gap-3"
+          >
+            {[
+              "React.js",
+              "Next.js",
+              "TypeScript",
+              "Tailwind CSS",
+              "JavaScript",
+              "Python",
+            ].map((tech) => (
+              <span
+                key={tech}
+                className="rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300 backdrop-blur-sm transition-all duration-300 hover:border-cyan-400/50 hover:bg-cyan-500/20 hover:scale-105"
+              >
+                {tech}
+              </span>
+            ))}
+          </motion.div>
 
           {/* CTA Buttons */}
           <motion.div
@@ -222,7 +222,7 @@ export default function Hero() {
 
             {/* View Resume */}
             <a
-              href="/resume/Shabana_resume.pdf"
+              href="/resume/Shabana_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View Resume in new tab"
@@ -234,8 +234,8 @@ export default function Hero() {
 
             {/* Secondary */}
             <a
-              href="/resume/Shabana_resume.pdf"
-              download="Shabana_resume.pdf"
+              href="/resume/Shabana_Resume.pdf"
+              download="Shabana_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               id="hero-download-cv-btn"
