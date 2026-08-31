@@ -12,6 +12,7 @@ const experiences = [
     location: "Trivandrum",
     period: "April 2026 – July 2026",
     bullets: [
+      <>Contributed to major live projects including <a href="https://www.magrabi.com/ae-en/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">MAGRABi UAE</a> (Leading Luxury Eyewear Retail Chain) and <a href="https://www.hotpackglobal.com/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">Hotpack Global</a> (#1 Manufacturer of Packaging Products in Middle East).</>,
       "Developed responsive and interactive web interfaces using React.js, Next.js, TypeScript, JavaScript, HTML5, CSS3, and Tailwind CSS.",
       "Converted Figma designs into responsive, production-ready user interfaces with consistent layouts across desktop, tablet, and mobile devices.",
       "Built reusable and modular UI components following clean and maintainable frontend development practices.",
@@ -30,7 +31,7 @@ const experiences = [
     location: "Trivandrum",
     period: "July 2025 – March 2026",
     bullets: [
-      "Developed and maintained responsive web applications using Angular, React.js, JavaScript, HTML5, and CSS3.",
+      "Developed and maintained responsive web applications, including upcoming demo projects, using Angular, React.js, JavaScript, HTML5, and CSS3.",
       "Developed reusable UI components and responsive layouts for different screen sizes and devices.",
       "Integrated RESTful APIs with frontend applications to retrieve, process, and display dynamic application data.",
       "Implemented application features including CRUD operations, search, pagination, filtering, sorting, and dynamic data rendering.",

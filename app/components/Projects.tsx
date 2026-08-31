@@ -52,7 +52,13 @@ export default function Projects() {
 
                   {/* Title */}
                   <h3 className="mb-3 text-xl font-bold text-white leading-snug group-hover:text-cyan-400 transition-colors duration-300">
-                    {project.title}
+                    {project.live && project.live !== "#" ? (
+                      <a href={project.live} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                        {project.title}
+                      </a>
+                    ) : (
+                      project.title
+                    )}
                   </h3>
 
                   {/* Description */}

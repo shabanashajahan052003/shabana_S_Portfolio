@@ -14,7 +14,7 @@ export default function About() {
           About Me
         </AnimatedHeading>
 
-        <GlassCard delay={0.2} hover tilt className="p-10 md:p-12 text-center relative overflow-hidden">
+        <GlassCard delay={0.2} hover tilt className="p-8 md:p-12 relative overflow-hidden">
           {/* Decorative background glow */}
           <div
             className="absolute top-[-50%] left-[-10%] w-64 h-64 rounded-full opacity-20 pointer-events-none"
@@ -29,17 +29,45 @@ export default function About() {
             }}
           />
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="relative z-10"
-          >
-            <p className="text-lg md:text-xl leading-relaxed text-slate-300 font-light">
-              <span className="text-cyan-400 font-medium">Junior Software Developer</span> with hands-on experience building and maintaining web applications, responsive user interfaces, backend services, and API-driven applications using React.js, Angular, Next.js, TypeScript, JavaScript, Python, Django, Node.js, REST APIs, and SQL databases. Experienced in developing reusable frontend components, integrating REST APIs, implementing CRUD operations, search, pagination, filtering, sorting, debouncing, and lazy loading, as well as converting Figma designs into production-ready interfaces. Hands-on exposure to AI and Machine Learning using Python, OpenCV, BERT, NumPy, and Pandas, with foundational cloud knowledge in AWS EC2, S3, and IAM. Strong understanding of debugging, testing, error handling, Git/GitHub, database operations, performance optimization, and software development lifecycle practices. B.Tech graduate in Computer Science and Engineering, currently based in Dubai, UAE and available for immediate joining.
-            </p>
-          </motion.div>
+          <div className="relative z-10 flex flex-col md:flex-row items-center gap-10">
+            {/* Image Section */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
+              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.3, type: "spring" }}
+              className="relative w-48 h-48 md:w-64 md:h-64 flex-shrink-0"
+            >
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500/20 to-purple-500/20 blur-2xl animate-pulse" />
+              <motion.div
+                animate={{ y: [-10, 10, -10] }}
+                transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
+                className="relative w-full h-full transition-all duration-500 z-10 group drop-shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:drop-shadow-[0_0_40px_rgba(139,92,246,0.6)]"
+              >
+                <Image
+                  src="/images/Shabu01.webp"
+                  alt="Shabana"
+                  fill
+                  sizes="(max-width: 768px) 192px, 256px"
+                  className="object-contain transition-transform duration-500 group-hover:scale-105"
+                  priority
+                />
+              </motion.div>
+            </motion.div>
+
+            {/* Text Section */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex-1 text-center md:text-left"
+            >
+              <p className="text-lg md:text-xl leading-relaxed text-slate-300 font-light">
+                <span className="text-cyan-400 font-medium">Junior Software Developer</span> with hands-on experience building dynamic web applications and responsive interfaces using React, Next.js, Python, and Django. Skilled in frontend performance optimization, REST API integrations, and translating Figma designs into production-ready code. Passionate about applying AI and Machine Learning to create intelligent, user-centric digital experiences.
+              </p>
+            </motion.div>
+          </div>
         </GlassCard>
       </div>
     </AnimatedSection>

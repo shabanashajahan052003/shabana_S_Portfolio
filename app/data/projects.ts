@@ -44,4 +44,46 @@ export const projects = [
       "Efficient complaint tracking and reporting",
     ],
   },
+  {
+    title: "MAGRABi UAE",
+    description:
+      "Live Project (Valoriz Digital): Leading Luxury Eyewear Retail Chain in the UAE.",
+    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    github: "#",
+    live: "https://www.magrabi.com/ae-en/",
+    features: [
+      "Developed responsive and interactive web interfaces for the luxury eyewear retail platform.",
+      "Converted Figma designs into production-ready user interfaces across devices.",
+      "Implemented smooth scrolling, animations, and interactive UI elements.",
+      "Integrated frontend interfaces with dynamic data rendering APIs.",
+    ],
+  },
+  {
+    title: "Hotpack Global",
+    description:
+      "Live Project (Valoriz Digital): #1 Manufacturer of Packaging Products in the Middle East.",
+    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    github: "#",
+    live: "https://www.hotpackglobal.com/",
+    features: [
+      "Developed responsive UI components for the leading manufacturer of packaging products.",
+      "Ensured cross-browser compatibility and accessible layouts.",
+      "Optimized frontend performance, responsiveness, and overall user experience.",
+      "Collaborated with UI/UX designers to translate requirements into functional interfaces.",
+    ],
+  },
+  {
+    title: "BlueRipples Demo Projects",
+    description:
+      "Upcoming Web Applications (BlueRipples Technologies). Projects launching soon.",
+    tech: ["Angular", "React.js", "JavaScript", "HTML5", "CSS3"],
+    github: "#",
+    live: "#",
+    features: [
+      "Developed reusable UI components and responsive layouts for different screen sizes.",
+      "Implemented CRUD operations, search, pagination, filtering, and sorting.",
+      "Optimized application performance with debouncing and lazy loading.",
+      "Handled API responses, JSON data validation, and frontend-backend communication.",
+    ],
+  },
 ];
