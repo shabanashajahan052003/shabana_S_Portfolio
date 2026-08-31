@@ -45,10 +45,10 @@ export default function About() {
                 className="relative w-full h-full transition-all duration-500 z-10 group drop-shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:drop-shadow-[0_0_40px_rgba(139,92,246,0.6)]"
               >
                 <Image
-                  src="/images/Shabu01.webp"
+                  src="/images/Shabu011.png"
                   alt="Shabana"
                   fill
-                  sizes="(max-width: 768px) 192px, 256px"
+                  sizes="(max-width: 768px) 500px, 500px"
                   className="object-contain transition-transform duration-500 group-hover:scale-105"
                   priority
                 />
