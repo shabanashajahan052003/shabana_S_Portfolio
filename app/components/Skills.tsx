@@ -18,7 +18,7 @@ import {
   SiMysql,
   SiGit,
 } from "react-icons/si";
-import { Network, Brain, MessageSquare, Users, Star, Mic } from "lucide-react";
+import { Network, Brain, MessageSquare, Users, Star, Mic, Database, Cloud } from "lucide-react";
 import type { IconType } from "react-icons";
 import type { LucideIcon } from "lucide-react";
 
@@ -31,34 +31,31 @@ interface Skill {
 }
 
 const technicalSkills: Skill[] = [
-  { label: "HTML", Icon: SiHtml5, color: "#e34f26" },
-  { label: "CSS", Icon: SiCss, color: "#1572b6" },
+  { label: "HTML5 & CSS3", Icon: SiHtml5, color: "#e34f26" },
   { label: "JavaScript", Icon: SiJavascript, color: "#f7df1e" },
   { label: "TypeScript", Icon: SiTypescript, color: "#3178c6" },
-  { label: "React", Icon: SiReact, color: "#61dafb" },
+  { label: "React.js", Icon: SiReact, color: "#61dafb" },
   { label: "Next.js", Icon: SiNextdotjs, color: "#e2e8f0" },
-  { label: "Angular (Basic)", Icon: SiAngular, color: "#dd0031" },
+  { label: "Angular", Icon: SiAngular, color: "#dd0031" },
   { label: "Tailwind CSS", Icon: SiTailwindcss, color: "#06b6d4" },
-  { label: "SCSS/SASS", Icon: SiSass, color: "#cc6699" },
   { label: "Python", Icon: SiPython, color: "#3776ab" },
   { label: "Django", Icon: SiDjango, color: "#44b78b" },
-  { label: "MySQL", Icon: SiMysql, color: "#4479a1" },
-  { label: "Git", Icon: SiGit, color: "#f05032" },
+  { label: "Git / GitHub", Icon: SiGit, color: "#f05032" },
 ];
 
-const networkingSkills: Skill[] = [
-  { label: "IP Addressing", Icon: Network },
-  { label: "DNS", Icon: Network },
-  { label: "DHCP", Icon: Network },
-  { label: "Networking", Icon: Network },
+const databaseSkills: Skill[] = [
+  { label: "MySQL", Icon: Database },
+  { label: "PostgreSQL", Icon: Database },
+  { label: "SQLite", Icon: Database },
+  { label: "Django ORM", Icon: Database },
+  { label: "REST APIs", Icon: Network },
 ];
 
-const softSkills: Skill[] = [
-  { label: "Problem Solving", Icon: Brain },
-  { label: "Communication", Icon: MessageSquare },
-  { label: "Teamwork", Icon: Users },
-  { label: "Leadership", Icon: Star },
-  { label: "Presentation Skills", Icon: Mic },
+const aiCloudSkills: Skill[] = [
+  { label: "NumPy / Pandas", Icon: Brain },
+  { label: "OpenCV / Matplotlib", Icon: Brain },
+  { label: "BERT / NLP", Icon: Brain },
+  { label: "AWS EC2 / S3", Icon: Cloud },
 ];
 
 function SkillPill({
@@ -131,9 +128,9 @@ export default function Skills() {
           Skills
         </AnimatedHeading>
 
-        <SkillsGroup title="Technologies" skills={technicalSkills} colorized />
-        <SkillsGroup title="Networking" skills={networkingSkills} />
-        <SkillsGroup title="Professional Skills" skills={softSkills} />
+        <SkillsGroup title="Core Technologies" skills={technicalSkills} colorized />
+        <SkillsGroup title="Databases & APIs" skills={databaseSkills} />
+        <SkillsGroup title="AI, Machine Learning & Cloud" skills={aiCloudSkills} />
       </div>
     </AnimatedSection>
   );

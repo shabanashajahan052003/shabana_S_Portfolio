@@ -7,56 +7,38 @@ import AnimatedHeading from "./AnimatedHeading";
 const journey = [
   {
     icon: "🎓",
-    title: "Computer Science Student",
-    description: "TKM Institute of Technology",
+    title: "B.Tech in Computer Science",
+    description: "TKM Institute of Technology (2021 - 2025)",
     category: "Education",
   },
   {
-    icon: "📚",
-    title: "Volunteer Mathematics Teacher",
-    description: "Project Ganitham",
-    category: "Volunteering",
-  },
-  {
-    icon: "💡",
-    title: "IEDC Contributor",
-    description: "Innovation & AI Awareness Activities",
-    category: "Innovation",
-  },
-  {
     icon: "🏀",
-    title: "Basketball Player",
-    description: "2nd Prize — College Sports Competition",
-    category: "Sports",
+    title: "Basketball Player & Volunteer Math Teacher",
+    description: "2nd Prize in Inter-College Sports & Mentor at Project Ganitham",
+    category: "Activities",
   },
   {
-    icon: "🤖",
-    title: "Fundamentals of Artificial Intelligence",
-    description: "NPTEL Certification",
-    category: "Certification",
-  },
-  {
-    icon: "🧠",
-    title: "Introduction to Machine Learning",
-    description: "NPTEL Certification",
+    icon: "📜",
+    title: "AI & Machine Learning Certifications",
+    description: "NPTEL (IIT Guwahati & IIT Kharagpur)",
     category: "Certification",
   },
   {
     icon: "💻",
-    title: "Python Django Full Stack Trainee",
-    description: "Luminar Technolab, Trivandrum",
-    category: "Training",
-  },
-  {
-    icon: "📊",
-    title: "Data Science Intern",
-    description: "Quest Innovative Solutions",
+    title: "Python Django Full Stack Developer Intern",
+    description: "Luminar Technolab (July 2025 – Feb 2026)",
     category: "Internship",
   },
   {
     icon: "⚙️",
     title: "Software Developer",
-    description: "BlueRipples Technologies",
+    description: "BlueRipples Technologies (July 2025 – March 2026)",
+    category: "Experience",
+  },
+  {
+    icon: "🚀",
+    title: "UI Developer",
+    description: "Valoriz Digital (April 2026 – July 2026)",
     category: "Experience",
   },
 ];
@@ -64,11 +46,11 @@ const journey = [
 const categoryColors: Record<string, string> = {
   Education: "#06b6d4",
   Volunteering: "#22c55e",
-  Innovation: "#f59e0b",
+  Activities: "#f59e0b",
   Sports: "#ec4899",
   Certification: "#8b5cf6",
-  Training: "#06b6d4",
   Internship: "#a78bfa",
+  Experience: "#ec4899",
 };
 
 export default function Journey() {

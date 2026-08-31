@@ -37,7 +37,7 @@ export default function About() {
             className="relative z-10"
           >
             <p className="text-lg md:text-xl leading-relaxed text-slate-300 font-light">
-              I am <span className="text-cyan-400 font-medium">Shabana</span>, a passionate Frontend Developer and Computer Science graduate with a strong interest in creating modern, user-friendly, and visually engaging web experiences. I enjoy transforming ideas into responsive and interactive digital products while continuously learning new technologies and design trends.
+              <span className="text-cyan-400 font-medium">Junior Software Developer</span> with hands-on experience building and maintaining web applications, responsive user interfaces, backend services, and API-driven applications using React.js, Angular, Next.js, TypeScript, JavaScript, Python, Django, Node.js, REST APIs, and SQL databases. Experienced in developing reusable frontend components, integrating REST APIs, implementing CRUD operations, search, pagination, filtering, sorting, debouncing, and lazy loading, as well as converting Figma designs into production-ready interfaces. Hands-on exposure to AI and Machine Learning using Python, OpenCV, BERT, NumPy, and Pandas, with foundational cloud knowledge in AWS EC2, S3, and IAM. Strong understanding of debugging, testing, error handling, Git/GitHub, database operations, performance optimization, and software development lifecycle practices. B.Tech graduate in Computer Science and Engineering, currently based in Dubai, UAE and available for immediate joining.
             </p>
           </motion.div>
         </GlassCard>

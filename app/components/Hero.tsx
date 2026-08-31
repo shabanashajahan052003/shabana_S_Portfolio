@@ -156,9 +156,9 @@ export default function Hero() {
             transition={{ delay: 1.6, duration: 0.8, ease: "easeOut" }}
             className="mt-6 text-2xl md:text-3xl text-white font-semibold tracking-wide"
           >
-            Software Developer{" "}
+            Junior Software Developer{" "}
             <span className="text-cyan-400">|</span>{" "}
-            Frontend Developer
+            Frontend & Python
           </motion.h2>
 
           {/* Professional Summary */}
@@ -170,10 +170,10 @@ export default function Hero() {
           >
             Building responsive, scalable, and user-friendly web applications using{" "}
             <span className="text-cyan-400 font-medium">
-              React, Next.js, TypeScript
+              React, Next.js, Python, and Django
             </span>
-            , and modern frontend technologies. Passionate about creating clean UI,
-            seamless user experiences, and high-performance web applications.
+            . Passionate about creating clean UI, seamless user experiences, and 
+            high-performance web applications with AI integrations.
           </motion.p>
 
           {/* Tech Stack */}

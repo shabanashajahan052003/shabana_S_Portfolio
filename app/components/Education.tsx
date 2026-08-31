@@ -10,21 +10,21 @@ const educationDetails = [
     degree: "Bachelor of Technology (B.Tech)",
     stream: "Computer Science and Engineering with Minor in Biomedical Engineering",
     institution: "TKM Institute of Technology, Karuvellil, Kollam",
-    score: "CGPA: 7.95",
+    score: "CGPA: 7.95/10 (2021 – 2025)",
     accent: "#06b6d4",
   },
   {
-    degree: "Higher Secondary Education (Plus Two)",
+    degree: "Higher Secondary Education (Class XII)",
     stream: "Science", // Usually assumed, but left optional
     institution: "TKM HSS Karikode, Kollam",
-    score: "Score: 96.5% | Full A+",
+    score: "96.5% | Full A+ (2020 – 2021)",
     accent: "#8b5cf6",
   },
   {
-    degree: "Secondary Education (10th Standard)",
-    stream: "SSLC",
+    degree: "Secondary School Leaving Certificate (SSLC)",
+    stream: "General",
     institution: "TKM HSS Karikode, Kollam",
-    score: "Score: 98% | Full A+",
+    score: "98% | Full A+ (2019 – 2020)",
     accent: "#ec4899",
   },
 ];
