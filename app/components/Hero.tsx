@@ -81,7 +81,7 @@ export default function Hero() {
 
       {/* ── Ambient corner glows ── */}
       <div
-        className="absolute -top-32 -left-32 h-[500px] w-[500px] rounded-full pointer-events-none z-[1]"
+        className="absolute -top-32 -left-32 h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-full pointer-events-none z-[1]"
         style={{
           background:
             "radial-gradient(circle, rgba(6,182,212,0.12) 0%, transparent 70%)",
@@ -89,7 +89,7 @@ export default function Hero() {
         aria-hidden="true"
       />
       <div
-        className="absolute -bottom-32 -right-32 h-[500px] w-[500px] rounded-full pointer-events-none z-[1]"
+        className="absolute -bottom-32 -right-32 h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-full pointer-events-none z-[1]"
         style={{
           background:
             "radial-gradient(circle, rgba(139,92,246,0.12) 0%, transparent 70%)",
@@ -100,7 +100,7 @@ export default function Hero() {
       {/* ── Text Content (parallax layer) ── */}
       <motion.div
         style={{ x: textX, y: textY }}
-        className="relative z-10 px-6 max-w-4xl mx-auto flex flex-col items-center justify-center gap-10"
+        className="relative z-10 px-4 sm:px-6 max-w-4xl mx-auto flex flex-col items-center justify-center gap-6 sm:gap-10"
       >
         <div className="text-center flex flex-col items-center flex-1 min-w-0">
           {/* Animated name — character by character */}
@@ -108,7 +108,7 @@ export default function Hero() {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="gradient-text text-[clamp(1.5rem,4.2vw,2.9rem)] font-semibold flex justify-center flex-nowrap whitespace-nowrap leading-none tracking-tight"
+            className="gradient-text text-[clamp(1.4rem,5vw,2.9rem)] font-semibold flex justify-center flex-wrap leading-tight tracking-tight text-center"
           >
             {name.split("").map((char, i) => (
               <motion.span
@@ -126,7 +126,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.6, duration: 0.8, ease: "easeOut" }}
-            className="mt-6 text-2xl md:text-3xl text-white font-semibold tracking-wide"
+            className="mt-4 sm:mt-6 text-lg sm:text-2xl md:text-3xl text-white font-semibold tracking-wide text-center"
           >
             Junior Software Developer{" "}
             <span className="text-cyan-400">|</span>{" "}
@@ -138,7 +138,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.75, duration: 0.8, ease: "easeOut" }}
-            className="mt-4 max-w-2xl text-base md:text-lg text-slate-300 font-light leading-8"
+            className="mt-3 sm:mt-4 max-w-2xl text-sm sm:text-base md:text-lg text-slate-300 font-light leading-7 sm:leading-8 px-2 sm:px-0"
           >
             Building responsive, scalable, and user-friendly web applications using{" "}
             <span className="text-cyan-400 font-medium">
@@ -153,7 +153,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 2.0, duration: 0.8, ease: "easeOut" }}
-            className="mt-6 flex flex-wrap items-center justify-center gap-3"
+            className="mt-4 sm:mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3 px-2 sm:px-0"
           >
             {[
               "React.js",
@@ -165,7 +165,7 @@ export default function Hero() {
             ].map((tech) => (
               <span
                 key={tech}
-                className="rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300 backdrop-blur-sm transition-all duration-300 hover:border-cyan-400/50 hover:bg-cyan-500/20 hover:scale-105"
+                className="rounded-full border border-cyan-500/20 bg-cyan-500/10 px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-cyan-300 backdrop-blur-sm transition-all duration-300 hover:border-cyan-400/50 hover:bg-cyan-500/20 hover:scale-105"
               >
                 {tech}
               </span>
@@ -177,13 +177,13 @@ export default function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 2.3, duration: 0.8, ease: "easeOut" }}
-            className="mt-10 flex flex-wrap items-center justify-center gap-4"
+            className="mt-6 sm:mt-10 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto px-2 sm:px-0"
           >
             {/* Primary */}
             <a
               href="#projects"
               id="hero-view-work-btn"
-              className="group flex items-center gap-2 rounded-full bg-cyan-500 px-8 py-3.5 font-semibold text-black text-sm transition-all duration-300 hover:bg-cyan-400 hover:scale-105 hover:shadow-[0_0_25px_rgba(6,182,212,0.55)]"
+              className="group flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-6 sm:px-8 py-3 sm:py-3.5 font-semibold text-black text-sm transition-all duration-300 hover:bg-cyan-400 hover:scale-105 hover:shadow-[0_0_25px_rgba(6,182,212,0.55)] w-full sm:w-auto"
             >
               View My Work
               <ArrowRight
@@ -198,7 +198,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View Resume in new tab"
-              className="group flex items-center gap-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm px-8 py-3.5 font-semibold text-sm text-white transition-all duration-300 hover:border-cyan-400/50 hover:bg-cyan-500/10 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
+              className="group flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm px-6 sm:px-8 py-3 sm:py-3.5 font-semibold text-sm text-white transition-all duration-300 hover:border-cyan-400/50 hover:bg-cyan-500/10 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 w-full sm:w-auto"
             >
               <FileText size={17} className="text-cyan-400 transition-transform duration-300 group-hover:-rotate-12 group-hover:scale-110" />
               View Resume
@@ -211,7 +211,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               id="hero-download-cv-btn"
-              className="flex items-center gap-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm px-8 py-3.5 font-semibold text-sm text-white transition-all duration-300 hover:border-cyan-400/60 hover:bg-cyan-500/10 hover:scale-105"
+              className="flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm px-6 sm:px-8 py-3 sm:py-3.5 font-semibold text-sm text-white transition-all duration-300 hover:border-cyan-400/60 hover:bg-cyan-500/10 hover:scale-105 w-full sm:w-auto"
             >
               <Download size={17} />
               Download CV

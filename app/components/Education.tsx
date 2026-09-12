@@ -31,9 +31,9 @@ const educationDetails = [
 
 export default function Education() {
   return (
-    <AnimatedSection className="px-6 py-40 section-glow-cyan" id="education">
+    <AnimatedSection className="px-4 sm:px-6 py-20 sm:py-40 section-glow-cyan" id="education">
       <div className="mx-auto max-w-5xl">
-        <AnimatedHeading className="mb-20 text-center text-5xl font-bold">
+        <AnimatedHeading className="mb-12 sm:mb-20 text-center text-3xl sm:text-4xl md:text-5xl font-bold">
           Education
         </AnimatedHeading>
 

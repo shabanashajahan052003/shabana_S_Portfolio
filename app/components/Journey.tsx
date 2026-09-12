@@ -30,15 +30,15 @@ const journey = [
     category: "Internship",
   },
   {
-    icon: "⚙️",
-    title: "Software Developer",
-    description: "BlueRipples Technologies (July 2025 – March 2026)",
+    icon: "🚀",
+    title: "UI Developer",
+    description: "Valoriz Digital (May 2025 – July 2025)",
     category: "Experience",
   },
   {
-    icon: "🚀",
-    title: "UI Developer",
-    description: "Valoriz Digital (April 2026 – July 2026)",
+    icon: "⚙️",
+    title: "Software Developer",
+    description: "Zavry (August 2025 – July 2026)",
     category: "Experience",
   },
 ];
@@ -55,9 +55,9 @@ const categoryColors: Record<string, string> = {
 
 export default function Journey() {
   return (
-    <AnimatedSection className="px-6 py-40 section-glow-purple">
+    <AnimatedSection className="px-4 sm:px-6 py-20 sm:py-40 section-glow-purple">
       <div className="mx-auto max-w-4xl">
-        <AnimatedHeading className="mb-20 text-center text-5xl font-bold">
+        <AnimatedHeading className="mb-12 sm:mb-20 text-center text-3xl sm:text-4xl md:text-5xl font-bold">
           My Journey
         </AnimatedHeading>
 

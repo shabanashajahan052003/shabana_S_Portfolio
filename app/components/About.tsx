@@ -8,9 +8,9 @@ import GlassCard from "./ui/GlassCard";
 
 export default function About() {
   return (
-    <AnimatedSection className="px-6 py-40 section-glow-purple">
+    <AnimatedSection className="px-4 sm:px-6 py-20 sm:py-40 section-glow-purple">
       <div className="mx-auto max-w-4xl" id="about">
-        <AnimatedHeading className="mb-12 text-center text-5xl font-bold">
+        <AnimatedHeading className="mb-8 sm:mb-12 text-center text-3xl sm:text-4xl md:text-5xl font-bold">
           About Me
         </AnimatedHeading>
 

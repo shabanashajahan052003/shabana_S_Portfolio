@@ -9,13 +9,13 @@ import { Sparkles } from "lucide-react";
 
 export default function Projects() {
   return (
-    <AnimatedSection className="px-6 py-40 section-glow-purple" id="projects">
+    <AnimatedSection className="px-4 sm:px-6 py-20 sm:py-40 section-glow-purple" id="projects">
       <div className="mx-auto max-w-7xl">
-        <AnimatedHeading className="mb-20 text-center text-5xl font-bold">
+        <AnimatedHeading className="mb-12 sm:mb-20 text-center text-3xl sm:text-4xl md:text-5xl font-bold">
           Featured Projects
         </AnimatedHeading>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}

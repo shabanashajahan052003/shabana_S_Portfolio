@@ -28,13 +28,13 @@ const hobbies = [
 
 export default function Hobbies() {
   return (
-    <AnimatedSection className="px-6 py-40 section-glow-purple" id="hobbies">
+    <AnimatedSection className="px-4 sm:px-6 py-20 sm:py-40 section-glow-purple" id="hobbies">
       <div className="mx-auto max-w-6xl">
-        <AnimatedHeading className="mb-20 text-center text-5xl font-bold">
+        <AnimatedHeading className="mb-12 sm:mb-20 text-center text-3xl sm:text-4xl md:text-5xl font-bold">
           Hobbies & Interests
         </AnimatedHeading>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
           {hobbies.map((hobby, i) => {
             const Icon = hobby.icon;
             return (

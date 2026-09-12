@@ -122,9 +122,9 @@ function SkillsGroup({
 
 export default function Skills() {
   return (
-    <AnimatedSection className="px-6 py-40 section-glow-cyan" id="skills">
+    <AnimatedSection className="px-4 sm:px-6 py-20 sm:py-40 section-glow-cyan" id="skills">
       <div className="mx-auto max-w-6xl">
-        <AnimatedHeading className="mb-20 text-center text-5xl font-bold">
+        <AnimatedHeading className="mb-12 sm:mb-20 text-center text-3xl sm:text-4xl md:text-5xl font-bold">
           Skills
         </AnimatedHeading>
 

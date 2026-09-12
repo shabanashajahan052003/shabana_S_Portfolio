@@ -72,18 +72,4 @@ export const projects = [
       "Collaborated with UI/UX designers to translate requirements into functional interfaces.",
     ],
   },
-  {
-    title: "BlueRipples Demo Projects",
-    description:
-      "Upcoming Web Applications (BlueRipples Technologies). Projects launching soon.",
-    tech: ["Angular", "React.js", "JavaScript", "HTML5", "CSS3"],
-    github: "#",
-    live: "#",
-    features: [
-      "Developed reusable UI components and responsive layouts for different screen sizes.",
-      "Implemented CRUD operations, search, pagination, filtering, and sorting.",
-      "Optimized application performance with debouncing and lazy loading.",
-      "Handled API responses, JSON data validation, and frontend-backend communication.",
-    ],
-  },
 ];

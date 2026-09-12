@@ -7,63 +7,49 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    title: "UI Developer",
-    company: "Valoriz Digital (Mozanta Technologies)",
+    title: "Software Developer",
+    company: "Zavry",
     location: "Trivandrum",
-    period: "April 2026 – July 2026",
+    period: "August 2025 – July 2026",
     bullets: [
-      <>Contributed to major live projects including <a href="https://www.magrabi.com/ae-en/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">MAGRABi UAE</a> (Leading Luxury Eyewear Retail Chain) and <a href="https://www.hotpackglobal.com/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">Hotpack Global</a> (#1 Manufacturer of Packaging Products in Middle East).</>,
-      "Developed responsive and interactive web interfaces using React.js, Next.js, TypeScript, JavaScript, HTML5, CSS3, and Tailwind CSS.",
-      "Converted Figma designs into responsive, production-ready user interfaces with consistent layouts across desktop, tablet, and mobile devices.",
-      "Built reusable and modular UI components following clean and maintainable frontend development practices.",
-      "Implemented smooth scrolling, animations, transitions, hover effects, and interactive UI elements to improve user experience.",
-      "Developed responsive layouts with attention to usability, accessibility, visual consistency, and cross-browser compatibility.",
-      "Collaborated with UI/UX designers and developers to translate design requirements into functional web interfaces.",
-      "Integrated frontend interfaces with APIs and implemented dynamic data rendering where required.",
-      "Debugged and resolved frontend issues related to layout, responsiveness, functionality, and browser compatibility.",
-      "Optimized frontend performance, responsiveness, and overall user experience.",
+      "Developed and maintained responsive web applications using JavaScript, React.js, HTML5, CSS3, and modern software development practices.",
+      "Integrated RESTful APIs to connect frontend applications with backend services and handle dynamic application data.",
+      "Implemented CRUD operations, search, pagination, filtering, and sorting for data-driven application features.",
+      "Implemented debouncing and lazy loading to reduce unnecessary API requests and improve application performance.",
+      "Worked on frontend-backend integration, JSON data handling, API responses, data validation, and dynamic application workflows.",
+      "Developed and maintained backend functionality using Python, Django, REST APIs, and database operations.",
+      "Worked with SQL databases including MySQL, PostgreSQL, and SQLite for application data management.",
+      "Implemented backend functionality including CRUD operations, API integration, validation, error handling, and application logic.",
+      "Performed debugging, testing, troubleshooting, and performance optimization.",
+      "Used Git and GitHub for version control and collaborative development.",
+      "Collaborated with developers throughout the Software Development Life Cycle (SDLC).",
     ],
     accent: "#06b6d4",
   },
   {
-    title: "Software Developer",
-    company: "BlueRipples Technologies",
+    title: "UI Developer",
+    company: "Valoriz Digital (Mozanta Technologies)",
     location: "Trivandrum",
-    period: "July 2025 – March 2026",
+    period: "May 2025 – July 2025",
     bullets: [
-      "Developed and maintained responsive web applications, including upcoming demo projects, using Angular, React.js, JavaScript, HTML5, and CSS3.",
-      "Developed reusable UI components and responsive layouts for different screen sizes and devices.",
-      "Integrated RESTful APIs with frontend applications to retrieve, process, and display dynamic application data.",
-      "Implemented application features including CRUD operations, search, pagination, filtering, sorting, and dynamic data rendering.",
-      "Implemented debouncing to optimize search functionality and reduce unnecessary API requests.",
-      "Implemented lazy loading to improve application loading performance and responsiveness.",
-      "Handled API responses, JSON data, validation, error handling, and frontend–backend communication.",
-      "Performed debugging, testing, troubleshooting, and performance optimization to improve application reliability and user experience.",
-      "Used Git and GitHub for version control, committing and pushing code changes during development.",
+      "Developed responsive and user-focused web interfaces using HTML5, CSS3, JavaScript, React.js, Next.js, TypeScript, and Tailwind CSS.",
+      "Converted Figma designs into pixel-accurate, responsive user interfaces.",
+      "Built reusable and modular UI components following clean and maintainable frontend development practices.",
+      "Developed responsive layouts for desktop, tablet, and mobile devices.",
+      "Implemented interactive UI elements, animations, transitions, hover effects, and smooth scrolling.",
+      "Collaborated with UI/UX designers and developers to translate design concepts into functional interfaces.",
+      "Integrated frontend interfaces with REST APIs and handled dynamic data rendering.",
+      "Debugged and resolved frontend issues related to layout, responsiveness, functionality, and browser compatibility.",
+      "Optimized frontend performance and overall user experience.",
     ],
     accent: "#8b5cf6",
-  },
-  {
-    title: "Python Django Full Stack Developer Intern",
-    company: "Luminar Technolab",
-    location: "Remote",
-    period: "July 2025 – February 2026",
-    bullets: [
-      "Developed web applications using Python and Django following structured full-stack development practices.",
-      "Worked with Django ORM, MySQL, REST APIs, and MVT architecture.",
-      "Developed backend functionality including CRUD operations, API integration, data validation, and application workflows.",
-      "Built responsive frontend interfaces using HTML, CSS, JavaScript, and Bootstrap.",
-      "Integrated frontend components with backend APIs and implemented dynamic data-driven functionality.",
-      "Performed debugging, testing, validation, error handling, and troubleshooting during application development.",
-    ],
-    accent: "#ec4899",
   },
 ];
 export default function Experience() {
   return (
-    <AnimatedSection className="px-6 py-40 section-glow-cyan" id="experience">
+    <AnimatedSection className="px-4 sm:px-6 py-20 sm:py-40 section-glow-cyan" id="experience">
       <div className="mx-auto max-w-5xl">
-        <AnimatedHeading className="mb-20 text-center text-5xl font-bold">
+        <AnimatedHeading className="mb-12 sm:mb-20 text-center text-3xl sm:text-4xl md:text-5xl font-bold">
           Experience
         </AnimatedHeading>
 

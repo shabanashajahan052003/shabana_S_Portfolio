@@ -31,13 +31,13 @@ const stories = [
 
 export default function Story() {
   return (
-    <AnimatedSection className="px-6 py-40 section-glow-cyan">
+    <AnimatedSection className="px-4 sm:px-6 py-20 sm:py-40 section-glow-cyan">
       <div className="mx-auto max-w-5xl" id="story">
-        <AnimatedHeading className="mb-20 text-center text-5xl font-bold">
+        <AnimatedHeading className="mb-12 sm:mb-20 text-center text-3xl sm:text-4xl md:text-5xl font-bold">
           My Story
         </AnimatedHeading>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 md:grid-cols-3">
           {stories.map((story, i) => (
             <GlassCard key={story.title} delay={i * 0.12} hover className="p-8">
               {/* Floating icon */}
