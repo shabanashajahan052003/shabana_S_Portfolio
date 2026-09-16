@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shabana | UI Developer & Full-Stack Engineer",
+  title: "Shabana S | Software Developer — React, Next.js, Python",
   description:
-    "Portfolio of Shabana — UI Developer Intern at Valoriz Digital, Computer Science student at TKM Institute of Technology. Building modern, responsive web applications.",
+    "Portfolio of Shabana S — Software Developer with experience in React, Next.js, TypeScript, Python, and Django. Building modern, responsive, and scalable web applications.",
   keywords: [
     "Shabana",
     "UI Developer",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     "Portfolio",
   ],
   openGraph: {
-    title: "Shabana | UI Developer & Full-Stack Engineer",
+    title: "Shabana S | Software Developer — React, Next.js, Python",
     description:
-      "Portfolio of Shabana — UI Developer Intern at Valoriz Digital.",
+      "Portfolio of Shabana S — Software Developer building modern, responsive web applications.",
     type: "website",
   },
 };

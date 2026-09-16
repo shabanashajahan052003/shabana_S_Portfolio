@@ -26,19 +26,25 @@ const journey = [
   {
     icon: "💻",
     title: "Python Django Full Stack Developer Intern",
-    description: "Luminar Technolab (July 2025 – Feb 2026)",
+    description: "Luminar Technolab (Jul 2025 – Feb 2026)",
     category: "Internship",
-  },
-  {
-    icon: "🚀",
-    title: "UI Developer",
-    description: "Valoriz Digital (May 2025 – July 2025)",
-    category: "Experience",
   },
   {
     icon: "⚙️",
     title: "Software Developer",
-    description: "Zavry (August 2025 – July 2026)",
+    description: "BlueRipples Technologies (Jun 2025 – Apr 2026)",
+    category: "Experience",
+  },
+  {
+    icon: "🌐",
+    title: "Web Developer — Freelance",
+    description: "Zavry (Aug 2025 – Jul 2026)",
+    category: "Freelance",
+  },
+  {
+    icon: "🚀",
+    title: "UI Developer",
+    description: "Valoriz Digital (May 2026 – Jul 2026)",
     category: "Experience",
   },
 ];
@@ -51,6 +57,7 @@ const categoryColors: Record<string, string> = {
   Certification: "#8b5cf6",
   Internship: "#a78bfa",
   Experience: "#ec4899",
+  Freelance: "#10b981",
 };
 
 export default function Journey() {

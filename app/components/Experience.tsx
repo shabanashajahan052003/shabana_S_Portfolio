@@ -3,14 +3,15 @@
 import { m as motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 import AnimatedHeading from "./AnimatedHeading";
-import { Briefcase, Calendar } from "lucide-react";
+import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
     title: "Software Developer",
-    company: "Zavry",
+    company: "BlueRipples Technologies",
     location: "Trivandrum",
-    period: "August 2025 – July 2026",
+    period: "Jun 2025 – Apr 2026",
+    type: "Full-time",
     bullets: [
       "Developed and maintained responsive web applications using JavaScript, React.js, HTML5, CSS3, and modern software development practices.",
       "Integrated RESTful APIs to connect frontend applications with backend services and handle dynamic application data.",
@@ -27,10 +28,25 @@ const experiences = [
     accent: "#06b6d4",
   },
   {
+    title: "Web Developer — Freelance",
+    company: "Zavry",
+    location: "Remote",
+    period: "Aug 2025 – Jul 2026",
+    type: "Freelance",
+    bullets: [
+      "Designed, developed, and delivered multiple client-facing websites using React.js, Next.js, and modern frontend technologies.",
+      "Built and launched Mayura Paints & Decorative, Zavry corporate website, and Pathiramanal Houseboats — all live production sites.",
+      "Implemented responsive layouts, SEO best practices, and optimized page performance for each client project.",
+      "Managed end-to-end project delivery including client communication, design implementation, deployment, and post-launch support.",
+    ],
+    accent: "#10b981",
+  },
+  {
     title: "UI Developer",
-    company: "Valoriz Digital (Mozanta Technologies)",
+    company: "Valoriz Digital",
     location: "Trivandrum",
-    period: "May 2025 – July 2025",
+    period: "May 2026 – Jul 2026",
+    type: "Full-time",
     bullets: [
       "Developed responsive and user-focused web interfaces using HTML5, CSS3, JavaScript, React.js, Next.js, TypeScript, and Tailwind CSS.",
       "Converted Figma designs into pixel-accurate, responsive user interfaces.",
@@ -45,6 +61,7 @@ const experiences = [
     accent: "#8b5cf6",
   },
 ];
+
 export default function Experience() {
   return (
     <AnimatedSection className="px-4 sm:px-6 py-20 sm:py-40 section-glow-cyan" id="experience">
@@ -58,10 +75,10 @@ export default function Experience() {
           {/* Vertical connector line */}
           <div className="absolute left-6 top-0 bottom-0 w-px timeline-line md:left-1/2 md:-translate-x-1/2" />
 
-          <div className="space-y-12">
+          <div className="space-y-12 sm:space-y-16">
             {experiences.map((exp, i) => (
               <motion.div
-                key={exp.title}
+                key={exp.company}
                 initial={{ opacity: 0, x: i % 2 === 0 ? -60 : 60 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-5%" }}
@@ -70,8 +87,9 @@ export default function Experience() {
                   delay: i * 0.15,
                   ease: [0.16, 1, 0.3, 1],
                 }}
-                className={`relative pl-16 md:pl-0 ${i % 2 === 0 ? "md:pr-[calc(50%+2rem)]" : "md:pl-[calc(50%+2rem)]"
-                  }`}
+                className={`relative pl-16 md:pl-0 ${
+                  i % 2 === 0 ? "md:pr-[calc(50%+2rem)]" : "md:pl-[calc(50%+2rem)]"
+                }`}
               >
                 {/* Timeline dot */}
                 <div
@@ -94,16 +112,17 @@ export default function Experience() {
                 </div>
 
                 {/* Card */}
-                <div className="glass glass-hover rounded-2xl p-7 transition-all duration-300">
+                <div className="glass glass-hover rounded-2xl p-6 sm:p-7 transition-all duration-300 relative overflow-hidden">
                   {/* Left accent bar */}
                   <div
                     className="absolute left-0 top-4 bottom-4 w-1 rounded-r-full"
                     style={{ background: exp.accent }}
                   />
 
+                  {/* Header */}
                   <div className="mb-4 flex flex-wrap items-start justify-between gap-2">
                     <div>
-                      <h3 className="text-xl font-bold text-white">
+                      <h3 className="text-lg sm:text-xl font-bold text-white">
                         {exp.title}
                       </h3>
                       <p
@@ -111,15 +130,31 @@ export default function Experience() {
                         style={{ color: exp.accent }}
                       >
                         {exp.company}
-                        {exp.location ? ` • ${exp.location}` : ""}
                       </p>
+                      <div className="mt-1.5 flex flex-wrap items-center gap-3 text-xs text-slate-500">
+                        <span className="flex items-center gap-1">
+                          <MapPin size={10} />
+                          {exp.location}
+                        </span>
+                        <span
+                          className="rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider"
+                          style={{
+                            color: exp.accent,
+                            background: `${exp.accent}18`,
+                            border: `1px solid ${exp.accent}30`,
+                          }}
+                        >
+                          {exp.type}
+                        </span>
+                      </div>
                     </div>
-                    <span className="flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-400">
+                    <span className="flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-400 whitespace-nowrap">
                       <Calendar size={11} />
                       {exp.period}
                     </span>
                   </div>
 
+                  {/* Bullet list */}
                   <ul className="mt-1 space-y-2 list-none">
                     {exp.bullets.map((bullet, j) => (
                       <li key={j} className="flex items-start gap-2 text-sm leading-6 text-slate-400">
@@ -131,11 +166,11 @@ export default function Experience() {
 
                   {/* Bottom icon */}
                   <div
-                    className="mt-4 flex items-center gap-2 text-xs font-medium"
+                    className="mt-5 flex items-center gap-2 text-xs font-medium"
                     style={{ color: exp.accent }}
                   >
                     <Briefcase size={12} />
-                    Work Experience
+                    {exp.type === "Freelance" ? "Freelance Experience" : "Work Experience"}
                   </div>
                 </div>
               </motion.div>

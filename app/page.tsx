@@ -31,8 +31,8 @@ export default function Home() {
         <Certifications />
         <Skills />
         <Hobbies />
-        <Projects />
         <Experience />
+        <Projects />
         <Contact />
       </main>
 
